@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    background: #121213;
+}
+.ring{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    border: 10px solid #ffc400;
+    background: #ffc400;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #ff7b0083,
+                0 0 40px #ff7b009a,
+                inset 0 0 30px #ff7b0083,
+                inset 0 0 20px #ff7b009a;
+    filter: url(#wave);
+    -webkit-box-reflect: below 5px linear gradient(transparent 70%, #121213);
+}
+svg{
+    display: none;
+}
